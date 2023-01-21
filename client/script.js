@@ -93,7 +93,7 @@ const handleSubmit = async (e) => {
 
   //fetch data from server
 
-  const response = await fetch('https://artificialintelligencecodex.onrender.com', {
+  const response = await fetch('https://artificialintelligencecodex.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -123,6 +123,6 @@ const handleSubmit = async (e) => {
 form.addEventListener('submit', handleSubmit);
 form.addEventListener('keyup', (e) => {
   if (e.keyCode === 13) {
-  handleSubmit(e);
+    handleSubmit(e);
   }
 })
